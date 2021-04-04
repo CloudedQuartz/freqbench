@@ -1,13 +1,13 @@
             CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
-   4:        618          3          3          3          3          4          3          2   PDC-GIC   19 Level     arch_timer
+   4:        622          2          2          2          2          3          2          1   PDC-GIC   19 Level     arch_timer
    6:          0          0          0          0          0          0          0          0   PDC-GIC   38 Level     arch_mem_timer
    7:          0          0          0          0          0          0          0          0   PDC-GIC  115 Edge      msm_drm
    9:          0          0          0          0          0          0          0          0   PDC-GIC  636 Level     i2c_geni
   10:          0          0          0          0          0          0          0          0   PDC-GIC  638 Level     i2c_geni
-  12:        286          0          0          0          0          0          0          0   PDC-GIC  387 Level     i2c_geni
+  12:        245          0          0          0          0          0          0          0   PDC-GIC  387 Level     i2c_geni
   13:          0          0          0          0          0          0          0          0   PDC-GIC  391 Level     i2c_geni
   14:          0          0          0          0          0          0          0          0   PDC-GIC  385 Level     spi_geni
-  25:          1          0          0          0          0          0          0          0  pmic_arb 219152585 Level     i2c_pmic_stat_irq
+  25:          0          0          0          0          0          0          0          0  pmic_arb 219152585 Level     i2c_pmic_stat_irq
   29:          0          0          0          0          0          0          0          0  pmic_arb 1111490819 Edge      pm8005_tz
   32:          0          0          0          0          0          0          0          0  pmic_arb 574619866 Edge      qcom,temp-alarm
   33:          0          0          0          0          0          0          0          0  pmic_arb 558891221 Edge      ptrain-done
@@ -20,7 +20,7 @@
   45:          0          0          0          0          0          0          0          0  pmic_arb 8454316 Edge      qpnp_resin_status
   47:          0          0          0          0          0          0          0          0  pmic_arb 8716460 Edge      qpnp_kpdpwr_resin_bark
   48:          0          0          0          0          0          0          0          0  pmic_arb 37748909 Edge      pm8998_tz
-  49:         19          0          0          0          0          0          0          0  pmic_arb 51380399 Edge      qpnp_vadc_interrupt
+  49:         20          0          0          0          0          0          0          0  pmic_arb 51380399 Edge      qpnp_vadc_interrupt
   50:          0          0          0          0          0          0          0          0  pmic_arb 54526128 Edge      qpnp_adc_tm_interrupt
   51:          0          0          0          0          0          0          0          0  pmic_arb 745537772 Edge      vendor:extcon_usb1
   57:          0          0          0          0          0          0          0          0  pmic_arb 561316055 Edge      msg-tx-discarded
@@ -34,9 +34,9 @@
   73:          0          0          0          0          0          0          0          0  pmic_arb 1026752764 Edge      qpnp_flash_led_all_ramp_down_done_irq
   74:          0          0          0          0          0          0          0          0  pmic_arb 1026818300 Edge      qpnp_flash_led_all_ramp_up_done_irq
   75:          0          0          0          0          0          0          0          0  pmic_arb 1006633210 Edge      haptics_sc_irq
-  76:          0          0          0          0          0          0          0          0  pmic_arb 1006698746 Edge      haptics_play_irq
-  80:        339          0          0          0          0          0          0          0   PDC-GIC  297 Edge      1d84000.ufshc
-  81:          0          0          0          0          0          0          0          0   PDC-GIC  236 Edge      mmc0
+  76:          1          0          0          0          0          0          0          0  pmic_arb 1006698746 Edge      haptics_play_irq
+  80:        313          0          0          0          0          0          0          0   PDC-GIC  297 Edge      1d84000.ufshc
+  81:         13          0          0          0          0          0          0          0   PDC-GIC  236 Edge      mmc0
   82:          2          0          0          0          0          0          0          0   PDC-GIC  254 Edge      8804000.sdhci
   83:          0          0          0          0          0          0          0          0   PDC-GIC  298 Edge      modem
   84:          0          0          0          0          0          0          0          0   PDC-GIC  194 Edge      adsp
@@ -49,7 +49,7 @@
   94:          0          0          0          0          0          0          0          0   PDC-GIC  610 Edge      cdsp
  100:          0          0          0          0          0          0          0          0   PDC-GIC  380 Level     qcom,glink-mailbox-xprt-spss
  101:         14          0          0          0          0          0          0          0   PDC-GIC  421 Edge      qcom,qmp-aop
- 102:        398          0          0          0          0          0          0          0   PDC-GIC   37 Level     apps_rsc
+ 102:        397          0          0          0          0          0          0          0   PDC-GIC   37 Level     apps_rsc
  103:          0          0          0          0          0          0          0          0   PDC-GIC  161 Level     display_rsc
  104:          0          0          0          0          0          0          0          0   PDC-GIC  481 Edge      qcom,glink-smem-native-xprt-modem
  105:          0          0          0          0          0          0          0          0   PDC-GIC  188 Edge      qcom,glink-smem-native-xprt-adsp
@@ -61,7 +61,7 @@
  126:          0          0          0          0          0          0          0          0   PDC-GIC  539 Level     tsens-upper-lower
  127:          0          0          0          0          0          0          0          0   PDC-GIC  541 Level     tsens-critical
  129:         17          0          0          0          0          0          0          0   PDC-GIC  277 Level     gpi_dma800000_gpii1
- 142:        200          0          0          0          0          0          0          0   PDC-GIC  312 Level     gpi_dmaa00000_gpii1
+ 142:         86          0          0          0          0          0          0          0   PDC-GIC  312 Level     gpi_dmaa00000_gpii1
  159:          0          0          0          0          0          0          0          0   PDC-GIC  261 Level     arm-smmu global fault
  160:          0          0          0          0          0          0          0          0   PDC-GIC  263 Level     arm-smmu global fault
  161:          0          0          0          0          0          0          0          0   PDC-GIC  396 Level     arm-smmu-context-fault
@@ -123,14 +123,11 @@
  252:          0          0          0          0          0          0          0          0   PDC-GIC  507 Edge      jpegdma
  253:          2          0          0          0          0          0          0          0   PDC-GIC  494 Edge      fd
  254:          0          0          0          0          0          0          0          0   PDC-GIC  206 Level     msm_vidc
- 266:          1          0          0          0          0          0          0          0  msmgpio-dc   10 Edge      TE_GPIO
- 280:          0          0          0          0          0          0          0          0  msmgpio-dc   24 Level     tas2559
+ 266:          0          0          0          0          0          0          0          0  msmgpio-dc   10 Edge      esd_err_irq
+ 267:          0          0          0          0          0          0          0          0  msmgpio-dc   11 Level     tas2559
  286:          0          0          0          0          0          0          0          0  msmgpio-dc   30 Level     tas2559
- 308:          0          0          0          0          0          0          0          0  msmgpio-dc   52 Edge      esd_err_irq
- 319:          0          0          0          0          0          0          0          0  msmgpio-dc   63 Level     nq-nci
- 334:          0          0          0          0          0          0          0          0  msmgpio-dc   78 Edge      idtp9220
+ 287:          1          0          0          0          0          0          0          0  msmgpio-dc   31 Edge      NVT-ts
  380:          0          0          0          0          0          0          0          0  msmgpio-dc  124 Edge      hall_key
- 381:          2          0          0          0          0          0          0          0  msmgpio-dc  125 Level     synaptics_dsx
  382:          0          0          0          0          0          0          0          0  msmgpio-dc  126 Edge      8804000.sdhci cd
  493:          0          0          0          0          0          0          0          0   PDC-GIC  332 Level     kgsl-3d0
  494:          0          0          0          0          0          0          0          0   PDC-GIC  336 Level     HFI
@@ -152,7 +149,7 @@
  670:          0          0          0          0          0          0          0          0       sde    2 Edge      sde_rotator_r3
  671:          0          0          0          0          0          0          0          0  i2c_pmic_irq_chip 4098 Edge      chg-state-change
  672:          0          0          0          0          0          0          0          0  i2c_pmic_irq_chip 5634 Edge      wdog-bark
- 673:          1          0          0          0          0          0          0          0  i2c_pmic_irq_chip 5696 Edge      temperature-change
+ 673:          0          0          0          0          0          0          0          0  i2c_pmic_irq_chip 5696 Edge      temperature-change
  674:          0          0          0          0          0          0          0          0  pmic_arb 553648336 Edge      chg-error
  675:          0          0          0          0          0          0          0          0  pmic_arb 553713872 Edge      chg-state-change
  679:          0          0          0          0          0          0          0          0  pmic_arb 554696913 Edge      otg-fail
@@ -220,12 +217,12 @@
 1014:          0          0          0          0          0          0          0          0  pmic_arb 605421788 Edge      batt-temp-delta
 1015:          0          0          0          0          0          0          0          0  pmic_arb 608174303 Edge      ima-rdy
 1016:          0          0          0          0          0          0          0          0  pmic_arb 608239839 Edge      mem-xcp
-1017:         17          0          0          0          0          0          0          0  pmic_arb 608305375 Edge      dma-grant
-IPI0:         62        103        104        104         97         97         94         95       Rescheduling interrupts
-IPI1:          8          6          6          6          6          6          7          6       Function call interrupts
+1017:         29          0          0          0          0          0          0          0  pmic_arb 608305375 Edge      dma-grant
+IPI0:         62         30         30         30         23         24         23         24       Rescheduling interrupts
+IPI1:          8          6          6          6          7          6          7          6       Function call interrupts
 IPI2:          0          0          0          0          0          0          0          0       CPU stop interrupts
 IPI3:          0          0          0          0          0          0          0          0       Timer broadcast interrupts
-IPI4:        132          6          5          4          7          7          6          6       IRQ work interrupts
+IPI4:        125          6          5          4          7          6          6          6       IRQ work interrupts
 IPI5:          0          0          0          0          0          0          0          0       CPU wake-up interrupts
 IPI6:          0          0          0          0          0          0          0          0       CPU backtrace
  Err:          0
